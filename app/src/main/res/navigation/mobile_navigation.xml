@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_building">
+
+    <fragment
+        android:id="@+id/navigation_building"
+        android:name="com.example.building3.ui.dashboard.BuildingFragment"
+        android:label="@string/title_building"
+        tools:layout="@layout/fragment_building" >
+        <action
+            android:id="@+id/action_navigation_building_to_addConfFragment"
+            app:destination="@id/addConfFragment" />
+        <action
+            android:id="@+id/action_navigation_building_to_saveConfFragment"
+            app:destination="@id/saveConfFragment" />
+        <action
+            android:id="@+id/action_navigation_building_to_budgetConfFragment"
+            app:destination="@id/budgetConfFragment" />
+        <action
+            android:id="@+id/action_navigation_building_to_optimalConfFragment"
+            app:destination="@id/optimalConfFragment" />
+        <action
+            android:id="@+id/action_navigation_building_to_expensiveConfFragment"
+            app:destination="@id/expensiveConfFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.building3.ui.home.ListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_navigation_list_to_cpuFragment"
+            app:destination="@id/cpuFragment" />
+        <action
+            android:id="@+id/action_navigation_list_to_motherboardsFragment"
+            app:destination="@id/motherboardsFragment" />
+        <action
+            android:id="@+id/action_navigation_list_to_GPUFragment"
+            app:destination="@id/GPUFragment" />
+        <action
+            android:id="@+id/action_navigation_list_to_powerpuppliesFragment"
+            app:destination="@id/powerpuppliesFragment" />
+        <action
+            android:id="@+id/action_navigation_list_to_RAMFragment"
+            app:destination="@id/RAMFragment" />
+        <action
+            android:id="@+id/action_navigation_list_to_SSDFragment"
+            app:destination="@id/SSDFragment" />
+        <action
+            android:id="@+id/action_navigation_list_to_cpucoolerFragment"
+            app:destination="@id/cpucoolerFragment" />
+        <action
+            android:id="@+id/action_navigation_list_to_corpusFragment"
+            app:destination="@id/corpusFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.building3.ui.notifications.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/cpuFragment"
+        android:name="com.example.building3.CPU.CpuFragment"
+        android:label="fragment_cpu"
+        tools:layout="@layout/fragment_cpu" />
+    <fragment
+        android:id="@+id/addConfFragment"
+        android:name="com.example.building3.AddConfFragment"
+        android:label="fragment_add_conf"
+        tools:layout="@layout/fragment_add_conf" />
+    <fragment
+        android:id="@+id/motherboardsFragment"
+        android:name="com.example.building3.Motherboards.MotherboardsFragment"
+        android:label="MotherboardsFragment" />
+    <fragment
+        android:id="@+id/GPUFragment"
+        android:name="com.example.building3.GPU.GPUFragment"
+        android:label="fragment_g_p_u"
+        tools:layout="@layout/fragment_g_p_u" />
+    <fragment
+        android:id="@+id/powerpuppliesFragment"
+        android:name="com.example.building3.Powersupplies.PowersuppliesFragment"
+        android:label="fragment_powerpupplies"
+        tools:layout="@layout/fragment_powerpupplies" />
+    <fragment
+        android:id="@+id/RAMFragment"
+        android:name="com.example.building3.RAM.RAMFragment"
+        android:label="fragment_r_a_m"
+        tools:layout="@layout/fragment_r_a_m" />
+    <fragment
+        android:id="@+id/SSDFragment"
+        android:name="com.example.building3.SSD.SSDFragment"
+        android:label="fragment_s_s_d"
+        tools:layout="@layout/fragment_s_s_d" />
+    <fragment
+        android:id="@+id/cpucoolerFragment"
+        android:name="com.example.building3.CpuCooler.CpucoolerFragment"
+        android:label="fragment_cpucooler"
+        tools:layout="@layout/fragment_cpucooler" />
+    <fragment
+        android:id="@+id/corpusFragment"
+        android:name="com.example.building3.Corpus.CorpusFragment"
+        android:label="fragment_corpus"
+        tools:layout="@layout/fragment_corpus" />
+    <fragment
+        android:id="@+id/saveConfFragment"
+        android:name="com.example.building3.SaveConfFragment"
+        android:label="fragment_save_conf"
+        tools:layout="@layout/fragment_save_conf" />
+    <fragment
+        android:id="@+id/budgetConfFragment"
+        android:name="com.example.building3.BudgetConfFragment"
+        android:label="fragment_budget_conf"
+        tools:layout="@layout/fragment_budget_conf" />
+    <fragment
+        android:id="@+id/optimalConfFragment"
+        android:name="com.example.building3.OptimalConfFragment"
+        android:label="fragment_optimal_conf"
+        tools:layout="@layout/fragment_optimal_conf" />
+    <fragment
+        android:id="@+id/expensiveConfFragment"
+        android:name="com.example.building3.ExpensiveConfFragment"
+        android:label="fragment_expensive_conf"
+        tools:layout="@layout/fragment_expensive_conf" />
+</navigation>

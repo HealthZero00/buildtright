@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Building2</string>
+    <string name="title_list">List</string>
+    <string name="title_building">Building</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_budget">Бюджетные сборки</string>
+    <string name="title_optimal">Оптимальные сборки</string>
+    <string name="title_exspensive">Дорогие сборки</string>
+    <string name="cpu_list">Процессоры</string>
+    <string name="videocards_list">Видеокарты</string>
+    <string name="motherboards_list">Материнские\nплаты</string>
+    <string name="autorization_settings">Авторизация Google\nДля входа и сохранения ваших сборок</string>
+    <string name="gmail_settings">Электронная почта\nЕсли есть баги или пожелания на будущее развитие проекта</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="powersupplies">Блок питания</string>
+    <string name="ram">Оперативная\nпамять</string>
+    <string name="ssd">твердотельные\nнакопители</string>
+    <string name="cpucooler">Система\nохлаждения</string>
+    <string name="corpus">Системный\nкорпус</string>
+
+</resources>

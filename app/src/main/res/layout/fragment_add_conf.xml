@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/backgroundlong"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/selectedMotherboardTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:text="Материнская плата не выбрана"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selectMotherboardButton"
+        android:layout_width="wrap_content"
+        android:background="@drawable/expensive"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/selectedMotherboardTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:text="Выбрать материнскую плату"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedMotherboardTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedCpuTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:text="Процессор не выбран"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectMotherboardButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selectCpuButton"
+            android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:background="@drawable/budget"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedMotherboardTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:text="Выбрать процессор"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedCpuTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedGpuTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:text="Видеокарта не выбрана"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectCpuButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selectGpuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+        android:layout_below="@+id/selectedMotherboardTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:text="Выбрать видеокарту"
+        android:background="@drawable/optimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedGpuTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedPowersuppliesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:text="Блок питания не выбран"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectGpuButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectPowersuppliesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectedMotherboardTextView"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/expensive"
+            android:text="Выбрать блок питания"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedPowersuppliesTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedRAMTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:text="Оеративная память не выбрана"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectPowersuppliesButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectRAMButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectedMotherboardTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/budget"
+            android:text="Выбрать оперативную память"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedRAMTextView" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedSSDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:text="Твердотельный накопитель не выбран"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectRAMButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectSSDButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectedMotherboardTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/expensive"
+            android:textColor="@android:color/white"
+            android:text="Выбрать твердотельный накопитель"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedSSDTextView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/componentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/selectMotherboardButton"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedCpucoolerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:text="Кулер не выбран"
+
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSSDButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectCpucoolerButton"
+            android:layout_width="wrap_content"
+            android:background="@drawable/budget"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/selectedMotherboardTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:text="Выбрать кулер"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedCpucoolerTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectedCorpusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:text="Корпус не выбран"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectCpucoolerButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectCorpusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectedMotherboardTextView"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:text="Выбрать корпус"
+            android:background="@drawable/optimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedCorpusTextView" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectSaveConfButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectCorpusButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="176dp"
+            android:background="@drawable/optimal"
+            android:text="Сохранить "
+            android:textColor="@color/pink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedCorpusTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="5dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="500dp"
+            android:text=" "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectSSDButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

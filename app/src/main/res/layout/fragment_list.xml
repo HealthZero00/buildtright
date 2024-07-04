@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundlong"
+        android:paddingBottom="16dp"
+        tools:context=".ui.list.ListFragment">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cpulist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cpu_list"
+            android:paddingLeft="90dp"
+            android:textSize="21sp"
+            android:textColor="@color/white"
+            android:background="@drawable/cpu"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/gpu_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/videocards"
+            android:paddingLeft="90dp"
+            android:text="@string/videocards_list"
+            android:textSize="21sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/cpulist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/motherboards_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/motherboards"
+            android:text="@string/motherboards_list"
+            android:textColor="@color/white"
+            android:paddingLeft="90dp"
+            android:textSize="21sp"
+            android:layout_below="@+id/gpu_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/powersupplies_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/motherboards_list"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/powerpuppliess"
+            android:paddingLeft="90dp"
+            android:text="@string/powersupplies"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rams_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rams"
+            android:paddingLeft="90dp"
+            android:text="@string/ram"
+            android:textSize="21sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/powersupplies_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ssd_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ssd"
+            android:text="@string/ssd"
+            android:textColor="@color/white"
+            android:paddingLeft="110dp"
+            android:textSize="21sp"
+            android:layout_below="@+id/rams_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cpucooler_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cpucoolers"
+            android:text="@string/cpucooler"
+            android:textColor="@color/white"
+            android:paddingLeft="90dp"
+            android:textSize="21sp"
+            android:layout_below="@+id/ssd_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/corpus_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corpus"
+            android:paddingLeft="90dp"
+            android:text="@string/corpus"
+            android:textSize="21sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/cpucooler_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
